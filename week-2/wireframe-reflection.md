@@ -1,5 +1,5 @@
-![Index Wireframe](/phase-0/week-2/imgs/index-wireframe.png)
-![Blog Wireframe](/phase-0/week-2/imgs/blog-wireframe.png )
+![Index Wireframe](/week-2/imgs/index-wireframe.png)
+![Blog Wireframe](/week-2/imgs/blog-wireframe.png)
 ***
 **What is a wireframe?**
 
