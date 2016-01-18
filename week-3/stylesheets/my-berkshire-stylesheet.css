@@ -1,3 +1,72 @@
-html {
-  background-color: red;
+* {
+  color:#000080;
+}
+
+head {
+  font-weight: bold;
+}
+
+.first-letter {
+  font-size: 20px;
+}
+
+h1{
+  margin:auto;
+  text-align: center;
+}
+
+.inc {
+  font-size: 13px;
+}
+
+.address {
+  font-size: 13px;
+}
+
+.home-page {
+  font-size: 16px;
+}
+
+a:link {
+  color:#800080;
+}
+
+a:visited {
+  color:#ff0000;
+}
+
+ul {
+  display: inline-block;
+  margin:auto;
+}
+
+.left-links {
+  float: left;
+  display: inline-block;
+}
+
+.right-links {
+  float: right;
+  display: inline-block;
+}
+
+.sub-line {
+  font-size: 10px;
+}
+
+.geico {
+  font-size: 10px;
+  text-align: center;
+}
+
+.info {
+  font-size: 13px;
+}
+
+.copy {
+  font-size: 10px;
+}
+
+footer {
+  clear:both;
 }
