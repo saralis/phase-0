@@ -1,6 +1,6 @@
-![Screenshot of Img 1](/imgs/1.png)
+![Screenshot of Img 1](/chrome-devtools/imgs/1.png)
 
-![Screenshot of Img 2](/imgs/2.png)
+![Screenshot of Img 2](/chrome-devtools/imgs/2.png)
 
 ![Screenshot of Img 3](/imgs/3.png)
 
