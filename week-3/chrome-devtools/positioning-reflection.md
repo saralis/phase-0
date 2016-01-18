@@ -1,20 +1,20 @@
-![Screenshot of Img 1](/imgs/1.png)
+![Screenshot of Img 1](imgs/1.png)
 
-![Screenshot of Img 2](../imgs/2.png)
+![Screenshot of Img 2](imgs/2.png)
 
 ![Screenshot of Img 3](imgs/3.png)
 
-![Screenshot of Img 4](chrome-devtools/imgs/4.png)
+![Screenshot of Img 4](imgs/4.png)
 
-![Screenshot of Img 5](/chrome-devtools/imgs/5.png)
+![Screenshot of Img 5](imgs/5.png)
 
-![Screenshot of Img 6](6.png)
+![Screenshot of Img 6](imgs/6.png)
 
-![Screenshot of Img 7](imgs/pairscreenshot.png)
+![Screenshot of Img 7](imgs/7.png)
 
-![Screenshot of Img 8](imgs/pairscreenshot.png)
+![Screenshot of Img 8](imgs/8.png)
 
-![Screenshot of Img 9](imgs/pairscreenshot.png)
+![Screenshot of Img 9](imgs/9.png)
 
 **How can you use Chrome's DevTools inspector to help you format or position elements?**
 
