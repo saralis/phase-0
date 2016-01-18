@@ -1,10 +1,10 @@
-![Screenshot of Img 1](/phase-0/week-3/chrome-devtools/imgs/1.png)
+![Screenshot of Img 1](/imgs/1.png)
 
-![Screenshot of Img 2](/phase-0/week-3/chrome-devtools/imgs/2.png)
+![Screenshot of Img 2](/imgs/2.png)
 
-![Screenshot of Img 3](imgs/pairscreenshot.png)
+![Screenshot of Img 3](/imgs/3.png)
 
-![Screenshot of Img 4](imgs/pairscreenshot.png)
+![Screenshot of Img 4](/imgs/4.png)
 
 ![Screenshot of Img 5](imgs/pairscreenshot.png)
 
