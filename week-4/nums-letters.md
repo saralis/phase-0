@@ -27,8 +27,30 @@ irb(main):008:0> 60 * 24 * 365 * 10
 ```
 
 **How does Ruby handle addition, subtraction, multiplication, and division of numbers?**
+
+Ruby handles these similarly to a basic calculator when using floats. It's also similar when using integers, but we deal with only whole numbers there.
+
+
 **What is the difference between integers and floats?**
+
+Integers are numbers without decimal points. Floats (floating-point numbers) are numbers with decimal points.
+
+
 **What is the difference between integer and float division?**
+
+Division with integers will only yeild a whole number and round down while division with floats will provide an answer including the decimal.
+
+
 **What are strings? Why and when would you use them?**
+
+Strings are groups of letters in a program. They can be thought of as beads with letters strung together.
+
+
 **What are local variables? Why and when would you use them?**
+
+Local variables live inside a method. They must be used and defined in that method.
+
+
 **How was this challenge? Did you get a good review of some of the basics?**
+
+This was a pretty easy challenge to complete. It was nice to have a Ruby refresher since the interview practice, but I still need to sit with the variable methods available and soak them in.
