@@ -1,7 +1,7 @@
 
 first_name='Saralis'
 last_name='Rivera'
-age='27'
+age="27"
 
 describe 'first_name' do
   it "is defined as a local variable" do
