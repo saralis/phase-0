@@ -1,7 +1,9 @@
 **What does puts do?**
+
 puts simply writes onto the screen whatever comes after it.
 
 **What is an integer? What is a float?**
+
 Integers are numbers without decimal points. Floats (floating-point numbers) are numbers with decimal points.
 
 
