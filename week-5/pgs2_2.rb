@@ -18,9 +18,6 @@ def groceries(items)
   word_array.each do |item|
     grocery_list[item] = 1
   end
-  # TODO: Update with print method #5 call
-  # This is just a todo.
-
   return grocery_list
 end
 
@@ -34,11 +31,10 @@ end
 # steps:
   # determine a key as grocery item and it's value as quantity
 # output: updated grocery list with added grocery item and quantity
-# item = "lemon"
-# quantity = 2
-#new_list = grocery_list{ "carrots" => 1, "apples" => 1, "cereal" => 1, "pizza" => 1 }
 
-def grocery_add(item, quantity, list)
+new_list = grocery_list{ "carrots" => 1, "apples" => 1, "cereal" => 1, "pizza" => 1 }
+
+def new_list(item, quantity, list)
   # new_list = grocery_list
   new_list[item] = quantity
   puts new_list
