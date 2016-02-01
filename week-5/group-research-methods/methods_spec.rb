@@ -1,5 +1,5 @@
 require_relative "my_solution"
-
+=begin
 # PERSON 1: FIND MATCHING DATA
 describe 'PERSON 1: my_array_finding_method' do
   let(:i_want_pets) {["I", "want", 3, "pets", "but", "only", "have", 2 ]}
@@ -122,7 +122,7 @@ describe 'PERSON 5: my_array_splitting_method' do
   end
 
 end
-
+=end
 describe 'PERSON 5: my_hash_splitting_method' do
   let(:my_family_pets_ages) {{"Evi" => 6, "Hoobie" => 3, "George" => 12, "Bogart" => 4, "Poly" => 4, "Annabelle" => 0, "Ditto" => 3}}
 
