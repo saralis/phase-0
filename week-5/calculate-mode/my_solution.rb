@@ -40,33 +40,28 @@
     #array = freq.sort_by {|k,v|v }.last
    end
     #new_array.sort
-
     p new_array
-
   end
 
-mode([1,1,2,2,2,2,3])
+#mode([1,1,2,2,2,2,3])
 
 
 # 3. Refactored Solution
 
 def mode(array)
-   freq = Hash.new(0)
-    array.each do |x| freq [x] += 1
-    end
-    new_array = []
-    freq.each do |k,v|
-      if v == freq.values.max
-        new_array << k
-      end
-   end
-    p new_array
-  end
+  array_mode = array.inject({}) { |k, v| k[v] = array.count(v); k }
+  array_mode.select { |k,v| v == array_mode.values.max }.keys
+end
+
+#p mode([1,2,2,2,2,3])
 
 
 # 4. Reflection
 =begin
 Which data structure did you and your pair decide to implement and why?
+
+We chose to use hash because we knew we were dealing with two sets of data.
+
 Were you more successful breaking this problem down into implementable pseudocode than the last with a pair?
 What issues/successes did you run into when translating your pseudocode to code?
 What methods did you use to iterate through the content? Did you find any good ones when you were refactoring? Were they difficult to implement?
