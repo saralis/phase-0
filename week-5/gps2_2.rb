@@ -42,18 +42,12 @@ end
 
 # grocery_add("lemon", 2, grocery_list)
 
-new_list {"carrots" => 1, "apples" => 1, "cereal" => 1, "pizza" => 1, "lemonade" => 2, "tomatoes" => 3, "onion" => 1, "ice cream" => 4}
-Lemonade, qty: 2
-Tomatoes, qty: 3
-Onions, qty: 1
-Ice Cream, qty: 4
+#new_list {"carrots" => 1, "apples" => 1, "cereal" => 1, "pizza" => 1, "lemonade" => 2, "tomatoes" => 3, "onion" => 1, "ice cream" => 4}
+#Lemonade, qty: 2
+#Tomatoes, qty: 3
+#Onions, qty: 1
+#Ice Cream, qty: 4
 
-  # grocery_list = {
-  #   carrots => 1
-  #   apples => 1
-  #   cereal => 1
-  #   pizza => 1
-  #   }
 
 # Method to remove an item from the list <--3
 # input: item name, quantity, method 2 list
