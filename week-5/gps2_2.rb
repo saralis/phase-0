@@ -21,10 +21,9 @@ def groceries(items)
   return grocery_list
 end
 
-#puts grocery_list = groceries(items)
+grocery_list = groceries(items)
 
-# {"carrots"=>1, "apples"=>1, "cereal"=>1, "pizza"=>1}
-
+p grocery_list
 
 # Method to add an item to a list <-- 2
 # input: item name, optional quantity,  method 1 list
@@ -32,22 +31,20 @@ end
   # determine a key as grocery item and it's value as quantity
 # output: updated grocery list with added grocery item and quantity
 
-new_list = grocery_list{ "carrots" => 1, "apples" => 1, "cereal" => 1, "pizza" => 1 }
-
-def new_list(item, quantity, list)
-  # new_list = grocery_list
-  new_list[item] = quantity
-  puts new_list
+def add_item(grocery_list, item, quantity)
+  grocery_list = grocery_list.each {|item,quantity|}
+     if grocery_list.has_key?(item)
+        grocery_list[item] += quantity
+     else
+       grocery_list[item] = quantity
+     end
 end
+add_item(grocery_list, "Lemonade", 2)
+add_item(grocery_list, "Tomatoes", 3)
+add_item(grocery_list, "Onions", 1)
+add_item(grocery_list, "Ice Cream", 4)
 
-# grocery_add("lemon", 2, grocery_list)
-
-#new_list {"carrots" => 1, "apples" => 1, "cereal" => 1, "pizza" => 1, "lemonade" => 2, "tomatoes" => 3, "onion" => 1, "ice cream" => 4}
-#Lemonade, qty: 2
-#Tomatoes, qty: 3
-#Onions, qty: 1
-#Ice Cream, qty: 4
-
+grocery_list = add_item(grocery_list, item, quantity)
 
 # Method to remove an item from the list <--3
 # input: item name, quantity, method 2 list
@@ -55,6 +52,15 @@ end
 #   search for the item (key) in the method 2 list
 #   IF found in list, remove
 # output: Updated grocery list without item/quantity
+
+def delete_item(grocery_list, item)
+grocery_list.delete(item)
+p grocery_list
+
+end
+delete_item(grocery_list,"Lemonade")
+
+p grocery_list
 
 # Method to update the quantity of an item <-- 4
 # input: item name, quantity, method 3 list
