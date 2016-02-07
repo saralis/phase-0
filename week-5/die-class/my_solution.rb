@@ -15,18 +15,21 @@
 
 class Die
   def initialize(sides)
-    die = Die.new(6)
-    dice.each do |die|
+    @sides = sides
+    if sides < 1
+      raise ArgumentError
+    #else
+      #die = Die.new(6)
     end
-end
-  def sides
-while (sides == 1) && (sides ==0)
-    raise ArgumentError.new
   end
-end
+  def sides
+    return die.sides
+
+
+  end
   def roll
     1 + rand(7)
-end
+  end
 end
 
 #What is an ArgumentError and why would you use one?
