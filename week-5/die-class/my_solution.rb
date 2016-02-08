@@ -16,19 +16,19 @@
 class Die
   def initialize(sides)
     @sides = sides
-    if sides < 1
+    if @sides < 1
       raise ArgumentError
-    #else
-      #die = Die.new(6)
+    else
+      @die = Die.new(6)
     end
   end
-  def sides
-    return die.sides
 
+  def sides
 
   end
+
   def roll
-    1 + rand(7)
+
   end
 end
 
