@@ -1,8 +1,7 @@
 # Class Warfare, Validate a Credit Card Number
 
 
-# I worked on this challenge [by myself, with: ].
-# I spent [#] hours on this challenge.
+# I spent 4 hours on this challenge.
 
 # Pseudocode
 
@@ -28,24 +27,7 @@
 # Don't forget to check on initialization for a card length
 # of exactly 16 digits
 
-class CreditCard
-  def initialize(card_number)
-    @card_number = card_number
-    if @card_number != 16
-      raise ArgumentError.new("Invalid Credit Card Number")
-    end
-  end
-  def card_check
-    p card_number
-  end
-end
 
-test = CreditCard.new(4563960122001999)
- test.card_check
-
-
-
-=begin
 class CreditCard
   def initialize(card_number)
     @card_number = [card_number]
@@ -53,6 +35,7 @@ class CreditCard
       raise ArgumentError.new("Invalid Credit Card Number")
     end
   end
+
    def card_processing
     @card_number.each_with_index do |i|
       if i.odd?
@@ -62,8 +45,11 @@ class CreditCard
       end
     end
   end
+
+  def check_card
+  end
 end
-=end
+
 
 
 
@@ -77,3 +63,18 @@ end
 
 
 # Reflection
+
+# What was the most difficult part of this challenge for you and your pair?
+# I think my pair and I may have been over thinking this challenge. We got stuck on trying to meet the requirements of the example and didn't get through the entire process.
+
+# I think this assignment taught me that simple is most likely the way to go. When you over think and get too caught up with specifcs vs general approach, you can eat up a lot of time trying to find a solution/get caught in rabbit holes.
+
+# What new methods did you find to help you when you refactored?
+
+# My pair and I didn't make it to refactoring because we struggled for so long on the initial solution, with no sucess. I started to become more familiar with the .each_with_index method. This allows you to call out specific index placements for iteration.
+
+# What concepts or learnings were you able to solidify in this challenge?
+
+# I don't think I was able to solidify a better understanding of classes and need to sit with this more. This was challenging for my pair and I to work through.
+
+
