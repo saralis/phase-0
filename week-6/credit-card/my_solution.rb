@@ -30,7 +30,7 @@
 
 class CreditCard
   def initialize(card_number)
-    @card_number = card_number.to_s.scan(/./).map {|i| i.to_i}
+    @card_number = card_number
     if @card_number != 16
       raise ArgumentError.new("Invalid Credit Card Number")
     end
