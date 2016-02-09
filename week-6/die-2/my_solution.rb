@@ -15,24 +15,24 @@
 
 class Die
   def initialize(labels)
-    @lables = lables
-    @sides = sides
-    @lables = Die.new(sides)
-    if @lables = []
+    @labels = labels
+    if @labels == []
       raise ArgumentError
     end
-
   end
 
   def sides
-    Die.sides(6)
+    @lables
   end
 
   def roll
-    Die.roll
+
   end
 end
 
+die = Die.new(['A','B','C','D','E','F'])
+puts die.sides
+puts die.roll
 
 
 # Refactored Solution
