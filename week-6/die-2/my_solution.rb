@@ -6,8 +6,8 @@
 
 # Pseudocode
 
-# Input:
-# Output:
+# Input: labels
+# Output: number of sides and rolls
 # Steps:
 
 
@@ -22,11 +22,11 @@ class Die
   end
 
   def sides
-    @lables
+    @labels
   end
 
   def roll
-
+    @labels
   end
 end
 
