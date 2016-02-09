@@ -16,21 +16,23 @@
 class Die
   def initialize(sides)
     @sides = sides
-    if @sides < 1
-      raise ArgumentError
-    else
-      @die = Die.new(6)
+      if @sides < 1
+       raise ArgumentError
     end
   end
 
   def sides
-
+    @sides
   end
 
   def roll
-
+    @sides = rand(1..6)
   end
 end
+
+die = Die.new(6)
+puts die.sides
+puts die.roll
 
 #What is an ArgumentError and why would you use one?
 
