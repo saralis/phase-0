@@ -15,12 +15,21 @@
 
 class Die
   def initialize(labels)
+    @lables = lables
+    @sides = sides
+    @lables = Die.new(sides)
+    if @lables = []
+      raise ArgumentError
+    end
+
   end
 
   def sides
+    Die.sides(6)
   end
 
   def roll
+    Die.roll
   end
 end
 
