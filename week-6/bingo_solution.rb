@@ -28,10 +28,31 @@ class BingoBoard
 
   def initialize(board)
     @bingo_board = board
+
   end
 
+  def generate
+    @bingo = {"B" => 0,"I" => 1,"N" => 2,"G" => 3,"0" => 4}
+    @num = rand(1..100)
+  end
+
+  def call
+    @bingo_board
+
+  end
+
+  def check
+
+  end
 
 end
+
+#tic_tac_toe.each do |row|
+#  row.each do |cell|
+#    if cell == ""
+#      cell = "X"
+
+
 
 bingo = BingoBoard.new
 
@@ -50,3 +71,15 @@ new_game = BingoBoard.new(board)
 
 
 #Reflection
+
+=begin
+
+How difficult was pseudocoding this challenge? What do you think of your pseudocoding style?
+What are the benefits of using a class for this challenge?
+How can you access coordinates in a nested array?
+What methods did you use to access and modify the array?
+Give an example of a new method you learned while reviewing the Ruby docs. Based on what you see in the docs, what purpose does it serve, and how is it called?
+How did you determine what should be an instance variable versus a local variable?
+What do you feel is most improved in your refactored solution?
+
+=end
