@@ -46,3 +46,15 @@ separateComma(12000000000);
 
 
 // Reflection
+
+// What was it like to approach the problem from the perspective of JavaScript? Did you approach the problem differently?
+// We did approach it differently. It was a similar approach to the Ruby solution considering we converted a number to a string, to an array back to a string.
+
+// What did you learn about iterating over arrays in JavaScript?
+// I learned that it is easy to iterate from left to right or from right to left depending on how the code is written.
+
+// What was different about solving this problem in JavaScript?
+// In the Ruby example, I used index placement to add the commas on a revered array and then reversed back. In Javascript we iterated through an array from right to left focusing on array length then converted it back to a string.
+
+// What built-in methods did you find to incorporate in your refactored solution?
+//

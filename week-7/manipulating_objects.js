@@ -44,12 +44,16 @@ adam.children = terah.children;
 
 // __________________________________________
 // Reflection: Use the reflection guidelines
-//
-//
-//
-//
-//
-//
+
+// What tests did you have trouble passing? What did you do to make it pass? Why did that work?
+// It took me a little longer when I got to test 8 - adding the children as objects with the property and value. This was mostly do to getting the correct syntax. I reviewed syntax examples to get the test to pass.
+
+// How difficult was it to add and delete properties outside of the object itself?
+// This was pretty easy after going back through the chapter examples. It was pretty straightforward to add and delete.
+
+// What did you learn about manipulating objects in this challenge?
+// I learned that as long as syntax is correct, it pretty straightforward to manipulate, however, you must ensure the data is behaving the way it is expected to.
+
 
 
 // __________________________________________

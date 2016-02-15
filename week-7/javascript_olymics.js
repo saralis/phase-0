@@ -68,6 +68,9 @@ console.log(michaelPhelps.name + " " + michaelPhelps.sport + " " + michaelPhelps
 
 // What are constructor functions?
 
-//
+// Constructor function type notation is the preferred method of creating a new object if you need to do some initial work before the object is created or require multiple instances of the object where each instance can be changed during the lifetime of the script.
 
 // How are constructors different from Ruby classes (in your research)?
+
+// Constructors are different from classes in that they don't inherit behavior from a specialized constructor as methods of classes do in Ruby.
+// The use of the keyword 'this' is something not utilized with Ruby classes.
