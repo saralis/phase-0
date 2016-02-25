@@ -26,7 +26,7 @@ class Die
   end
 
   def roll
-    @sides = rand(1..6)
+    return rand(1..sides)
   end
 end
 

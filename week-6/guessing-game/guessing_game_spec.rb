@@ -1,4 +1,4 @@
-require_relative 'my_solution'
+require_relative 'my_solution2'
 
 describe GuessingGame do
   let(:game) { GuessingGame.new(10) }

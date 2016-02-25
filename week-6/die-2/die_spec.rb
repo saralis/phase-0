@@ -1,4 +1,4 @@
-require_relative 'my_solution'
+require_relative 'my_solution2'
 
 describe Die do
   describe '#initialize' do
