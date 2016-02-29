@@ -8,15 +8,7 @@
 # Input: 16 digit credit card number
 # Output: Returns true or false
 # Steps:
-# create class called CreditCard
-# validate card number length (must be 16 digits)
-# initialize way to accept credit card number
-# IF number is not 16 digits raise error
-# define card_processing method
-# starting with the second to last digit, double every other digit until first digit
-# sum all of the untouched digits (break apart double digits)
-# define new check_card method
-# If the total is a multiple of ten, you have received a valid credit card number
+
 
 #Step 1: 8   5  12   3  18   6   0   1   4   2   0   0   2   9  18   9
 #Step 2: 8 + 5 + 1 + 2 + 3 + 1 + 8 + 6 + 0 + 1 + 4 + 2 + 0 + 0 + 2 + 9 + 1 + 8 + 9
@@ -30,30 +22,80 @@
 
 class CreditCard
   def initialize(card_number)
-    @card_number = [card_number]
-    if @card_number != 16
-      raise ArgumentError.new("Invalid Credit Card Number")
-    end
-  end
-
-   def card_processing
-    @card_number.each_with_index do |i|
-      if i.odd?
-       return i * 2
-      else
-        return i
-      end
+    @card_number = card_number
+    if @card_number.to_s.length !=16
+      raise ArgumentError
     end
   end
 
   def check_card
+    array_of_digits = @card_number.to_s.split("")
+    array_of_digits.map! { |digit_string| digit_string.to_i }
+
+    double_some(array_of_digits)
+
+    array_of_digits.map! { |d| d.to_s.split("") }
+    array_of_digits.flatten!
+    array_of_digits.map! { |digit_string| digit_string.to_i }
+
+    sum = 0
+    array_of_digits.each { |d| sum += d }
+
+    return sum % 10 == 0
+  end
+
+  def double_some(arr)
+    # input: array of integers
+    # output: array with ints in even indexs doubled
+    even_check = true
+    arr.map! do |digit|
+      if even_check
+        even_check = false
+        digit*2
+      else
+        even_check = true
+        digit
+      end
+    end
+    return arr
+  end
+end
+# Refactored Solution
+
+class CreditCard
+  def initialize(card_number)
+    raise ArgumentError unless card_number.to_s.length == 16
+    @card_number = card_number
+  end
+
+  def check_card
+    array_of_digits = @card_number.to_s.split("").map {|d| d.to_i}
+
+    double_some(array_of_digits)
+
+    array_of_digits.map! do |d|
+      d.to_s.split("").map { |d| d.to_i }
+    end
+
+    sum = 0
+    array_of_digits.flatten.each { |d| sum += d }
+    return sum % 10 == 0
+  end
+
+  def double_some(arr)
+    # input: array of integers
+    # output: array with ints in even indexs doubled
+    #.each_with_index { |item, index|
+
+    arr.each_with_index do |digit, index|
+      arr[index] = digit*2 if index % 2 == 0
+    end
+    return arr
   end
 end
 
 
-
-
-# Refactored Solution
+p CreditCard.new(4563960122001999).check_card
 
 
 
@@ -65,16 +107,14 @@ end
 # Reflection
 
 # What was the most difficult part of this challenge for you and your pair?
-# I think my pair and I may have been over thinking this challenge. We got stuck on trying to meet the requirements of the example and didn't get through the entire process.
-
-# I think this assignment taught me that simple is most likely the way to go. When you over think and get too caught up with specifcs vs general approach, you can eat up a lot of time trying to find a solution/get caught in rabbit holes.
+# I think just getting the ensuring we had the correct control flow throughout. There were times when we tried to call a method on the data but received an error noting we had to convert the data to a different object type.
 
 # What new methods did you find to help you when you refactored?
 
-# My pair and I didn't make it to refactoring because we struggled for so long on the initial solution, with no sucess. I started to become more familiar with the .each_with_index method. This allows you to call out specific index placements for iteration.
+# I started to become more familiar with the .each_with_index method. This allows you to call out specific index placements for iteration. We also utilized flatten to convert the sub array into one array.
 
 # What concepts or learnings were you able to solidify in this challenge?
 
-# I don't think I was able to solidify a better understanding of classes and need to sit with this more. This was challenging for my pair and I to work through.
+# I think I was able to see how much data and process/lines of code can happen within methods if designed that way.
 
 
