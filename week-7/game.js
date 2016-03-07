@@ -12,9 +12,7 @@
 // Pseudocode
 // Create objects for player and zomie. The player will be able to move and pick up medicine. The zombie will be able to move and attack.
 // Create functions for movement (forward or backward), medicine pick up.
-//
-//
-//
+
 
 // Initial Code
 

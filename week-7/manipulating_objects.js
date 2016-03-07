@@ -1,6 +1,6 @@
  // Manipulating JavaScript Objects
 
-// I worked on this challenge: [by myself, with: ]
+// I worked on this challenge by myself
 
 // There is a section below where you will write your code.
 
@@ -52,7 +52,7 @@ adam.children = terah.children;
 // This was pretty easy after going back through the chapter examples. It was pretty straightforward to add and delete.
 
 // What did you learn about manipulating objects in this challenge?
-// I learned that as long as syntax is correct, it pretty straightforward to manipulate, however, you must ensure the data is behaving the way it is expected to.
+// I learned that as long as syntax is correct, it pretty straightforward to manipulate, however, you must ensure the data is behaving the way it is expected to. I also gained an understanding of circular relations when it comes to objects (ex: Terah's spouse = Adam; Adam's spouse = Terah)
 
 
 

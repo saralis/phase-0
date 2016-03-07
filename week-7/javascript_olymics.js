@@ -1,9 +1,5 @@
 // JavaScript Olympics
 
-// I paired Brett Reily on this challenge.
-
-// This challenge took me [#] hours.
-
 
 // Bulk Up
 
@@ -19,7 +15,6 @@ win(athletes)
 // Jumble your words
 
 var reverse = function(string){
-
   console.log(string.split('').reverse().join(''))
 }
 reverse("!sdrow ruoy elbmuJ")
@@ -36,10 +31,8 @@ var evens = function(array) {
       even_numbers.push(array[i])
     }
     else if (array[i] % 2 == 0) {
-
       even_numbers.push(array[i])
     }
-
   };
   console.log(even_numbers);
 }

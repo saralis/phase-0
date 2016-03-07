@@ -42,8 +42,8 @@ end
 new_grocery_list = grocery_list(items)
 
 
-def add_item(item, quantity)
-  new_grocery_list[:key] << ""
+def add_item(item, quantity, )
+  new_grocery_list[:key]
 end
 
 p add_item(item, quantity)

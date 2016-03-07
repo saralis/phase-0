@@ -57,4 +57,4 @@ separateComma(12000000000);
 // In the Ruby example, I used index placement to add the commas on a revered array and then reversed back. In Javascript we iterated through an array from right to left focusing on array length then converted it back to a string.
 
 // What built-in methods did you find to incorporate in your refactored solution?
-//
+// We used .splice to insert the comma in the refactor.
